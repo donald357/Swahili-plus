@@ -1,1 +1,303 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwahiliPlus - Learn Swahili Easily</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #00843d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 5px;
+    }
+
+    nav {
+      background: #006b32;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #00843d, #00a651);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 25px;
+      background: #ffd700;
+      color: #222;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 45px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #00843d;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #00843d;
+      margin-bottom: 10px;
+    }
+
+    .phrase {
+      font-size: 20px;
+      font-weight: bold;
+      color: #00843d;
+    }
+
+    .translation {
+      margin-top: 8px;
+      color: #555;
+    }
+
+    .quiz {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .quiz button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ddd;
+      background: #f5f5f5;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .quiz button:hover {
+      background: #e5f5eb;
+    }
+
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 30px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>SwahiliPlus</h1>
+  <p>Learn Swahili. Speak with confidence.</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#lessons">Lessons</a>
+  <a href="#phrases">Phrases</a>
+  <a href="#quiz">Quiz</a>
+</nav>
+
+<section class="hero" id="home">
+  <h2>Learn Swahili the Easy Way 🇰🇪</h2>
+  <p>
+    Learn useful Swahili words, phrases and basic conversations
+    for travel, business and everyday life.
+  </p>
+  <a href="#lessons" class="btn">Start Learning</a>
+</section>
+
+<section id="lessons">
+  <h2>Beginner Lessons</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Lesson 1</h3>
+      <p class="phrase">Jambo</p>
+      <p class="translation">Hello</p>
+    </div>
+
+    <div class="card">
+      <h3>Lesson 2</h3>
+      <p class="phrase">Habari?</p>
+      <p class="translation">How are you?</p>
+    </div>
+
+    <div class="card">
+      <h3>Lesson 3</h3>
+      <p class="phrase">Asante</p>
+      <p class="translation">Thank you</p>
+    </div>
+
+    <div class="card">
+      <h3>Lesson 4</h3>
+      <p class="phrase">Karibu</p>
+      <p class="translation">Welcome / You're welcome</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="phrases">
+  <h2>Useful Swahili Phrases</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <p class="phrase">Naitwa Daniel</p>
+      <p class="translation">My name is Daniel</p>
+    </div>
+
+    <div class="card">
+      <p class="phrase">Unaitwa nani?</p>
+      <p class="translation">What is your name?</p>
+    </div>
+
+    <div class="card">
+      <p class="phrase">Niko sawa</p>
+      <p class="translation">I am fine</p>
+    </div>
+
+    <div class="card">
+      <p class="phrase">Tafadhali</p>
+      <p class="translation">Please</p>
+    </div>
+
+    <div class="card">
+      <p class="phrase">Ndiyo</p>
+      <p class="translation">Yes</p>
+    </div>
+
+    <div class="card">
+      <p class="phrase">Hapana</p>
+      <p class="translation">No</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="quiz">
+  <h2>Test Your Swahili</h2>
+
+  <div class="quiz">
+    <h3>What does "Asante" mean?</h3>
+
+    <button onclick="checkAnswer(false)">Hello</button>
+    <button onclick="checkAnswer(true)">Thank you</button>
+    <button onclick="checkAnswer(false)">Goodbye</button>
+
+    <p id="result"></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 SwahiliPlus</p>
+  <p>Learn Swahili. Connect with the world.</p>
+</footer>
+
+<script>
+  function checkAnswer(correct) {
+    const result = document.getElementById("result");
+
+    if (correct) {
+      result.innerHTML = "✅ Correct! Great job!";
+      result.style.color = "green";
+    } else {
+      result.innerHTML = "❌ Not quite. Try again!";
+      result.style.color = "red";
+    }
+  }
+</script>
+
+</body>
+</html>
